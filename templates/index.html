@@ -1,0 +1,67 @@
+{% extends 'block.html' %}
+
+{% block subcontent %}
+<div class="card-body text-center">
+	<h4 class="card-title">Predict the Score of 1st Innings</h4>
+	<form method="post" class="form-row" action="/predict">
+		<div class="row">
+			<div class="col-lg-6 col-sm-12">
+				<label for="batting_team">Batting Team
+					<select name="batting_team" class="btn btn-light btn-toolbar">
+						{% for team in teams %}
+						<option value="{{team}}">{{team}}</option>
+						{% endfor %}
+					</select>
+				</label>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<label for="bowling_team">Bowling Team
+					<select name="bowling_team" class="btn btn-light btn-toolbar">
+						{% for team in teams %}
+						<option value="{{team}}">{{team}}</option>
+						{% endfor %}
+					</select>
+				</label>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<label for="venue">Venue
+					<select name="venue" class="btn btn-light btn-toolbar">
+						{% for venue in venue %}
+						<option value="{{venue}}">{{venue}}</option>
+						{% endfor %}
+					</select>
+				</label>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<label for="runs">Current Score
+					<input required type="number" class="btn btn-light btn-toolbar" name="runs" min="1" placeholder="Eg. 64">
+				</label>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<label for="wickets">Current Wickets
+					<input required type="number" class="btn btn-light btn-toolbar" name="wickets" min="1" max="10" placeholder="Eg. 3">
+				</label>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<label for="overs">Current Over
+					<input required type="number" step="0.1" class="btn btn-light btn-toolbar" id="overs" name="overs" max="20.0" min="5.0" accept="float" placeholder="Overs (>= 5.0) Eg. 7.2">
+				</label>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<label for="runs_last_5">Runs scored in Last 5 Overs
+					<input required type="number" name="runs_last_5" class="btn btn-light btn-toolbar" min="0" placeholder="Eg. 42" >
+				</label>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<label for="wickets_last_5">Wickets taken in Last 5 Overs
+					<input required type="number" name="wickets_last_5" min="0" class="btn btn-light btn-toolbar" max="10" placeholder="Eg. 3">
+				</label>
+			</div>
+
+			<div class="col-12">
+				<input required type="submit" class="btn btn-success" value="Predict Score">
+			</div>
+		</div>
+	</form>
+</div>
+{% endblock %}
