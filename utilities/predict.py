@@ -8,7 +8,10 @@ import os
 #regressor = pickle.load(open(filename, 'rb'))
 
 # Load the RandomForestRegression Model
-forest = load(os.path.join(os.getcwd(), 'utilities', 'randomForest-model.pkl'))
+#forest = load(os.path.join(os.getcwd(), 'utilities', 'randomForest-model.pkl'))
+
+# Load the RandomForestRegression Compressed Model
+forest = load(os.path.join(os.getcwd(), 'utilities', 'rf_model_comp.pgz'))
 
 def predict_score(batting_team, bowling_team, venue, runs, wickets, overs, runs_last_5, wickets_last_5):
     prediction_array = []
