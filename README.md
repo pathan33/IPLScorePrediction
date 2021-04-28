@@ -2,18 +2,18 @@
 <br>
 
 # IPL First Innings Score Prediction - Flask Deployment
-![Python 3.6] (https://img.shields.io/badge/Python-3.6-brightgreen) ![scikit-learn] (https://img.shields.io/badge/Library-Scikit%20Learn-orange)
+![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen) ![scikit-learn](https://img.shields.io/badge/Library-Scikit%20Learn-orange)
 
 # Project Goal
 **This project is to designed to predict the first innings Score of Indian Premier League using Regression Analysis with PYTHON,FLASK,HTML**
 
 ## Webapp Deployment
-The final model is deployed in Heroku and found [here](https://ipl-predict-score.herokuapp.com)</br>
+The final model is deployed in Heroku and found [here](https://ipl-scorepredict.herokuapp.com)</br>
 
 ## Source code link (Github)
 Github Code of Webapp can be found [here](https://github.com/pathan33/IPLScorePrediction)
 
-[![Open In Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/googlecolab/colabtools/blob/master/notebooks/colab-github-demo.ipynb)
+[![Open In Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/pathan33/IPLScorePrediction/blob/main/IPL_Score_Predict_New.ipynb)
 
 ## Dataset Source
 The dataset can be downloaded from [Kaggle here](https://www.kaggle.com/yuvrajdagur/ipl-dataset-season-2008-to-2017).
