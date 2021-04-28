@@ -5,7 +5,7 @@
 ![Python 3.6](https://img.shields.io/badge/Python-3.6-brightgreen) ![scikit-learn](https://img.shields.io/badge/Library-Scikit%20Learn-orange)
 
 # Project Goal
-**This project is to designed to predict the first innings Score of Indian Premier League using Regression Analysis with PYTHON,FLASK,HTML**
+**This project is to designed to predict the first innings Score of Indian Premier League using Regression Analysis with PYTHON, FLASK and HTML**
 
 ## Webapp Deployment
 The final model is deployed in Heroku and found [here](https://ipl-scorepredict.herokuapp.com)</br>
