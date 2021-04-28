@@ -31,7 +31,7 @@ Venue = [
 			'Wankhede Stadium'
         ]
 
-predict_score = None
+predicted_score = None
 
 # making route
 @app.route('/')
@@ -39,11 +39,11 @@ def home():
     return render_template('index.html',teams=TEAM_CODE, venue = Venue, score=predicted_score)
 
 @app.route('/predict', methods=['GET', 'POST'])
-def prediction():
+def predict():
 	global predicted_score
 
 	if request.method == 'POST':
-		req = request.form()
+		req = request.form
 
 		batting_team = req['batting_team']
 		bowling_team = req['bowling_team']
@@ -65,5 +65,5 @@ def error(e):
 
 # running application
 if  __name__ == '__main__':
-    app.run()
+    app.run(debug=True, port=8000)
     #app.run(debug=True, port=8000)  #You are using gunicorn. That means you don't start the development server in debug mode. This is good. But it means you need to check the logs to see what the error is.
