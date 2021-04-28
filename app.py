@@ -65,4 +65,5 @@ def error(e):
 
 # running application
 if  __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
+    #app.run(debug=True, port=8000)  #You are using gunicorn. That means you don't start the development server in debug mode. This is good. But it means you need to check the logs to see what the error is.
