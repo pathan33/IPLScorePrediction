@@ -10,5 +10,5 @@ numpy==1.20.2
 scikit-learn==0.24.1
 scipy==1.6.3
 threadpoolctl==2.1.0
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 wincertstore==0.2
